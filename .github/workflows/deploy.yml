@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'  # 自动缓存 npm 依赖
+          cache: 'npm'
       
       # 3. 安装依赖
       - name: Install dependencies
@@ -43,8 +43,5 @@ jobs:
       - name: Deploy
         env:
           GIT_USER: git
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USE_SSH: false
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          npm run deploy
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy
