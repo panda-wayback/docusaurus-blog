@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-panda-blog/算法/工业算法总结" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">工业算法总结：实用性与设计美学并重的经典算法 | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://panda-wayback.github.io/docusaurus-blog/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://panda-wayback.github.io/docusaurus-blog/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://panda-wayback.github.io/docusaurus-blog/docs/panda-blog/算法/工业算法总结"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="工业算法总结：实用性与设计美学并重的经典算法 | My Site"><meta data-rh="true" name="description" content="💡 核心理念"><meta data-rh="true" property="og:description" content="💡 核心理念"><link data-rh="true" rel="icon" href="/docusaurus-blog/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://panda-wayback.github.io/docusaurus-blog/docs/panda-blog/算法/工业算法总结"><link data-rh="true" rel="alternate" href="https://panda-wayback.github.io/docusaurus-blog/docs/panda-blog/算法/工业算法总结" hreflang="en"><link data-rh="true" rel="alternate" href="https://panda-wayback.github.io/docusaurus-blog/docs/panda-blog/算法/工业算法总结" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"工业算法总结：实用性与设计美学并重的经典算法","item":"https://panda-wayback.github.io/docusaurus-blog/docs/panda-blog/算法/工业算法总结"}]}</script><link rel="alternate" type="application/rss+xml" href="/docusaurus-blog/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/docusaurus-blog/blog/atom.xml" title="My Site Atom Feed">
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/docusaurus-blog/blog-panda/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/docusaurus-blog/blog-panda/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/docusaurus-blog/assets/css/styles.59b7a052.css">
+<script src="/docusaurus-blog/assets/js/runtime~main.18695c66.js" defer="defer"></script>
+<script src="/docusaurus-blog/assets/js/main.920182da.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docusaurus-blog/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docusaurus-blog/"><div class="navbar__logo"><img src="/docusaurus-blog/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docusaurus-blog/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a class="navbar__item navbar__link" href="/docusaurus-blog/docs/category/tutorial---basics">Tutorial</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docusaurus-blog/docs/panda-blog/ros2/ros2 仿真/URDF/urdf 教程1 link和visual">Panda Blog</a><a class="navbar__item navbar__link" href="/docusaurus-blog/blog">Blog</a><a class="navbar__item navbar__link" href="/docusaurus-blog/blog-panda">Blog Panda</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docusaurus-blog/docs/panda-blog/ros2/ros2 仿真/URDF/urdf 教程1 link和visual"><span title="ros2" class="categoryLinkLabel_W154">ros2</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docusaurus-blog/docs/panda-blog/server/工具/Multipass 使用文档（macOS 环境)"><span title="server" class="categoryLinkLabel_W154">server</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docusaurus-blog/docs/panda-blog/vpn/OpenVPN 搭建"><span title="vpn" class="categoryLinkLabel_W154">vpn</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docusaurus-blog/docs/panda-blog/手机技术/操控手机/scrcpy 操控安卓虚拟机"><span title="手机技术" class="categoryLinkLabel_W154">手机技术</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docusaurus-blog/docs/panda-blog/算法/基础算法/搜索算法/BFS/搜索算法BFS"><span title="算法" class="categoryLinkLabel_W154">算法</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docusaurus-blog/docs/panda-blog/算法/基础算法/搜索算法/BFS/搜索算法BFS"><span title="基础算法" class="categoryLinkLabel_W154">基础算法</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docusaurus-blog/docs/panda-blog/算法/工业算法/寻路算法/Flood Fill 洪水填充"><span title="工业算法" class="categoryLinkLabel_W154">工业算法</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docusaurus-blog/docs/panda-blog/算法/工业算法总结"><span title="工业算法总结：实用性与设计美学并重的经典算法" class="linkLabel_WmDU">工业算法总结：实用性与设计美学并重的经典算法</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/docusaurus-blog/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">算法</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">工业算法总结：实用性与设计美学并重的经典算法</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>工业算法总结：实用性与设计美学并重的经典算法</h1></header>
+<blockquote>
+<p>💡 <strong>核心理念</strong><br>
+<!-- -->这些算法体现了&quot;实用性极强、设计思想简洁而深刻&quot;的特点，源于工业、机器人、图形学、人工智能等领域的实际问题，追求<strong>稳定性、可解释性、效率与优雅的解法</strong>。</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-算法设计美学的共同特征">🎯 算法设计美学的共同特征<a href="#-算法设计美学的共同特征" class="hash-link" aria-label="Direct link to 🎯 算法设计美学的共同特征" title="Direct link to 🎯 算法设计美学的共同特征" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-为什么这些算法有设计感">✅ 为什么这些算法&quot;有设计感&quot;？<a href="#-为什么这些算法有设计感" class="hash-link" aria-label="Direct link to ✅ 为什么这些算法&quot;有设计感&quot;？" title="Direct link to ✅ 为什么这些算法&quot;有设计感&quot;？" translate="no">​</a></h3>
+<ul>
+<li><strong>都源于真实复杂问题</strong> - 不是纸上谈兵，而是解决实际工程需求</li>
+<li><strong>不是&quot;暴力解&quot;而是巧妙平衡效率与稳定性</strong> - 用数学之美解决工程问题</li>
+<li><strong>可以解释、可调优</strong> - 每个参数都有明确的物理或数学含义</li>
+<li><strong>小而美，逻辑紧凑，不依赖大模型</strong> - 用简洁的原理产生强大的效果</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-控制与决策类算法">🔧 控制与决策类算法<a href="#-控制与决策类算法" class="hash-link" aria-label="Direct link to 🔧 控制与决策类算法" title="Direct link to 🔧 控制与决策类算法" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-pid-控制器">🎛️ PID 控制器<a href="#️-pid-控制器" class="hash-link" aria-label="Direct link to 🎛️ PID 控制器" title="Direct link to 🎛️ PID 控制器" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 基于比例-积分-微分的反馈调节机制</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->P(现在) + I(过去) + D(未来)，三者协同实现精确控制</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用简单的数学公式解决了复杂的控制问题，自动适应系统变化</p>
+<p><strong>应用场景</strong><br>
+<!-- -->工业自动化 | 温控 | 电机控制 | 飞行器姿态控制</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-卡尔曼滤波器">🎯 卡尔曼滤波器<a href="#-卡尔曼滤波器" class="hash-link" aria-label="Direct link to 🎯 卡尔曼滤波器" title="Direct link to 🎯 卡尔曼滤波器" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 最优估计理论的完美体现</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->在不确定和噪声下预测系统状态，通过预测-更新循环实现最优估计</p>
+<p><strong>高深之处</strong><br>
+<!-- -->巧妙融合概率论、线性代数和控制理论，用数学优雅地处理不确定性</p>
+<p><strong>应用场景</strong><br>
+<!-- -->机器人定位 | 导航 | GPS定位 | 金融预测 | 目标跟踪</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-a-搜索算法">🔍 A* 搜索算法<a href="#-a-搜索算法" class="hash-link" aria-label="Direct link to 🔍 A* 搜索算法" title="Direct link to 🔍 A* 搜索算法" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 启发式搜索的经典之作</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->f(n) = g(n) + h(n)，将已知成本和预估成本完美结合</p>
+<p><strong>高深之处</strong><br>
+<!-- -->在保证最优解的前提下，用启发函数大幅减少搜索空间</p>
+<p><strong>应用场景</strong><br>
+<!-- -->游戏寻路 | 导航 | 机器人路径规划 | 网络路由</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-状态机fsm">⚙️ 状态机（FSM）<a href="#️-状态机fsm" class="hash-link" aria-label="Direct link to ⚙️ 状态机（FSM）" title="Direct link to ⚙️ 状态机（FSM）" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 用&quot;状态&quot;和&quot;转换&quot;构建逻辑行为模型</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->将复杂的行为分解为有限的状态和明确的转换规则</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用图论思维解决逻辑控制问题，使复杂行为变得可预测</p>
+<p><strong>应用场景</strong><br>
+<!-- -->游戏AI | 协议控制 | 工业逻辑控制 | 嵌入式系统</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-模糊控制">🌫️ 模糊控制<a href="#️-模糊控制" class="hash-link" aria-label="Direct link to 🌫️ 模糊控制" title="Direct link to 🌫️ 模糊控制" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 替代PID，能处理模糊规则</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->用数学方法处理&quot;大概&quot;、&quot;差不多&quot;等模糊概念</p>
+<p><strong>高深之处</strong><br>
+<!-- -->将人类经验知识转化为可执行的控制规则</p>
+<p><strong>应用场景</strong><br>
+<!-- -->智能家电 | 空调控制 | 自动驾驶 | 洗衣机控制</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-智能与自适应类算法">🧠 智能与自适应类算法<a href="#-智能与自适应类算法" class="hash-link" aria-label="Direct link to 🧠 智能与自适应类算法" title="Direct link to 🧠 智能与自适应类算法" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-遗传算法">🧬 遗传算法<a href="#-遗传算法" class="hash-link" aria-label="Direct link to 🧬 遗传算法" title="Direct link to 🧬 遗传算法" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 模仿进化选择、交叉、变异寻找最优解</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->用生物进化的思想解决优化问题，通过种群迭代逼近最优解</p>
+<p><strong>高深之处</strong><br>
+<!-- -->将达尔文进化论转化为数学优化工具</p>
+<p><strong>应用场景</strong><br>
+<!-- -->参数优化 | 路径规划 | AI训练 | 工程设计优化</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-蚁群算法">🐜 蚁群算法<a href="#-蚁群算法" class="hash-link" aria-label="Direct link to 🐜 蚁群算法" title="Direct link to 🐜 蚁群算法" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 模仿蚂蚁觅食留下信息素的行为</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->通过正反馈机制和随机搜索相结合，实现群体智能</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用简单个体的协作产生复杂的群体智能</p>
+<p><strong>应用场景</strong><br>
+<!-- -->图优化 | 路径选择 | 物流调度 | 网络路由</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-粒子群优化pso">🐦 粒子群优化（PSO）<a href="#-粒子群优化pso" class="hash-link" aria-label="Direct link to 🐦 粒子群优化（PSO）" title="Direct link to 🐦 粒子群优化（PSO）" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 模仿鸟群寻找食物的集体协作</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->个体经验 + 群体智慧，通过速度和位置更新寻找最优解</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用社会心理学原理解决数学优化问题</p>
+<p><strong>应用场景</strong><br>
+<!-- -->机器学习调参 | 工程优化 | 神经网络训练</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-q-learning强化学习">🎮 Q-learning（强化学习）<a href="#-q-learning强化学习" class="hash-link" aria-label="Direct link to 🎮 Q-learning（强化学习）" title="Direct link to 🎮 Q-learning（强化学习）" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 通过试错学习行为策略</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->在与环境交互中学习最优策略，无需先验知识</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用数学期望理论解决学习问题，实现真正的智能</p>
+<p><strong>应用场景</strong><br>
+<!-- -->游戏AI | 自动控制 | 机器人学习 | 推荐系统</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-几何--图形--图论类算法">🌊 几何 / 图形 / 图论类算法<a href="#-几何--图形--图论类算法" class="hash-link" aria-label="Direct link to 🌊 几何 / 图形 / 图论类算法" title="Direct link to 🌊 几何 / 图形 / 图论类算法" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-洪水填充算法">🌊 洪水填充算法<a href="#-洪水填充算法" class="hash-link" aria-label="Direct link to 🌊 洪水填充算法" title="Direct link to 🌊 洪水填充算法" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 扫描连通区域，类似BFS/DFS</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->从起点开始，像水流一样扩散到所有连通的区域</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用简单的递归思想解决复杂的区域处理问题</p>
+<p><strong>应用场景</strong><br>
+<!-- -->图像处理 | 迷宫寻路 | 颜色填充 | 区域分割</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-marching-squares--cubes">📐 Marching Squares / Cubes<a href="#-marching-squares--cubes" class="hash-link" aria-label="Direct link to 📐 Marching Squares / Cubes" title="Direct link to 📐 Marching Squares / Cubes" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 生成等高线、轮廓线</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->通过网格采样和插值生成平滑的等值线</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用离散化方法处理连续性问题</p>
+<p><strong>应用场景</strong><br>
+<!-- -->医学图像 | 地形建模 | 3D重建 | 科学可视化</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-voronoi-图">🕸️ Voronoi 图<a href="#️-voronoi-图" class="hash-link" aria-label="Direct link to 🕸️ Voronoi 图" title="Direct link to 🕸️ Voronoi 图" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 空间划分结构</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->将平面划分为若干区域，每个区域内的点都离某个种子点最近</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用几何直觉解决空间分析问题</p>
+<p><strong>应用场景</strong><br>
+<!-- -->地图生成 | 无线信号建模 | 城市规划 | 生物学研究</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-rrt-快速随机树">🌳 RRT (快速随机树)<a href="#-rrt-快速随机树" class="hash-link" aria-label="Direct link to 🌳 RRT (快速随机树)" title="Direct link to 🌳 RRT (快速随机树)" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 用随机采样进行路径探索</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->通过随机采样快速探索配置空间，构建路径树</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用概率完备性保证找到解，同时保持高效率</p>
+<p><strong>应用场景</strong><br>
+<!-- -->机器人避障路径规划 | 运动规划 | 游戏AI</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-工业机器人领域特色算法">💡 工业/机器人领域特色算法<a href="#-工业机器人领域特色算法" class="hash-link" aria-label="Direct link to 💡 工业/机器人领域特色算法" title="Direct link to 💡 工业/机器人领域特色算法" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-slam同步定位与建图">🗺️ SLAM（同步定位与建图）<a href="#️-slam同步定位与建图" class="hash-link" aria-label="Direct link to 🗺️ SLAM（同步定位与建图）" title="Direct link to 🗺️ SLAM（同步定位与建图）" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 一边走一边构建地图</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->解决&quot;鸡生蛋蛋生鸡&quot;的循环依赖问题</p>
+<p><strong>高深之处</strong><br>
+<!-- -->用概率论和统计学方法处理不确定性</p>
+<p><strong>应用场景</strong><br>
+<!-- -->无人车 | 扫地机器人 | 无人机探索 | AR/VR</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-dwa动态窗口法">🚗 DWA（动态窗口法）<a href="#-dwa动态窗口法" class="hash-link" aria-label="Direct link to 🚗 DWA（动态窗口法）" title="Direct link to 🚗 DWA（动态窗口法）" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 结合速度空间与障碍物评估行动</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->在速度空间中搜索最优轨迹，实现实时避障</p>
+<p><strong>高深之处</strong><br>
+<!-- -->将高维路径规划问题转化为速度空间优化</p>
+<p><strong>应用场景</strong><br>
+<!-- -->移动机器人实时运动规划 | 自动驾驶 | 无人机导航</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-视觉伺服visual-servoing">👁️ 视觉伺服（Visual Servoing）<a href="#️-视觉伺服visual-servoing" class="hash-link" aria-label="Direct link to 👁️ 视觉伺服（Visual Servoing）" title="Direct link to 👁️ 视觉伺服（Visual Servoing）" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 用相机图像引导动作</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->直接用视觉信息构建控制回路，无需3D重建</p>
+<p><strong>高深之处</strong><br>
+<!-- -->将图像特征与机器人控制直接关联</p>
+<p><strong>应用场景</strong><br>
+<!-- -->机械臂精准抓取 | 视觉对准 | 自动装配</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-人工势场法">⚡ 人工势场法<a href="#-人工势场法" class="hash-link" aria-label="Direct link to ⚡ 人工势场法" title="Direct link to ⚡ 人工势场法" translate="no">​</a></h3>
+<blockquote>
+<p><strong>设计思想</strong>: 物理学中势场概念的巧妙应用</p>
+</blockquote>
+<p><strong>核心理念</strong><br>
+<!-- -->目标产生引力，障碍物产生斥力，机器人在合力作用下自然导航</p>
+<p><strong>高深之处</strong><br>
+<!-- -->将复杂的路径规划问题转化为物理势场问题</p>
+<p><strong>应用场景</strong><br>
+<!-- -->机器人避障 | 无人机导航 | 多机器人协调</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-算法设计哲学总结">🎨 算法设计哲学总结<a href="#-算法设计哲学总结" class="hash-link" aria-label="Direct link to 🎨 算法设计哲学总结" title="Direct link to 🎨 算法设计哲学总结" translate="no">​</a></h2>
+<p>这些算法都体现了几个共同的设计哲学：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1️⃣-优雅的数学原理">1️⃣ 优雅的数学原理<a href="#1️⃣-优雅的数学原理" class="hash-link" aria-label="Direct link to 1️⃣ 优雅的数学原理" title="Direct link to 1️⃣ 优雅的数学原理" translate="no">​</a></h3>
+<p>用简洁的公式表达复杂的问题，数学之美与工程实用性的完美结合。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2️⃣-仿生学思维">2️⃣ 仿生学思维<a href="#2️⃣-仿生学思维" class="hash-link" aria-label="Direct link to 2️⃣ 仿生学思维" title="Direct link to 2️⃣ 仿生学思维" translate="no">​</a></h3>
+<p>从自然界中汲取智慧，将生物行为转化为算法逻辑。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3️⃣-实用性与理论性并重">3️⃣ 实用性与理论性并重<a href="#3️⃣-实用性与理论性并重" class="hash-link" aria-label="Direct link to 3️⃣ 实用性与理论性并重" title="Direct link to 3️⃣ 实用性与理论性并重" translate="no">​</a></h3>
+<p>既有深厚的理论基础，又能解决实际工程问题。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4️⃣-渐进式优化">4️⃣ 渐进式优化<a href="#4️⃣-渐进式优化" class="hash-link" aria-label="Direct link to 4️⃣ 渐进式优化" title="Direct link to 4️⃣ 渐进式优化" translate="no">​</a></h3>
+<p>通过迭代逐步逼近最优解，体现了工程中的折中思维。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5️⃣-可解释性">5️⃣ 可解释性<a href="#5️⃣-可解释性" class="hash-link" aria-label="Direct link to 5️⃣ 可解释性" title="Direct link to 5️⃣ 可解释性" translate="no">​</a></h3>
+<p>每个参数和步骤都有明确的物理或数学含义，便于调试和优化。</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-学习建议">🚀 学习建议<a href="#-学习建议" class="hash-link" aria-label="Direct link to 🚀 学习建议" title="Direct link to 🚀 学习建议" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-学习方法">📖 学习方法<a href="#-学习方法" class="hash-link" aria-label="Direct link to 📖 学习方法" title="Direct link to 📖 学习方法" translate="no">​</a></h3>
+<ol>
+<li><strong>从问题出发</strong> - 理解每个算法要解决的核心问题</li>
+<li><strong>掌握核心思想</strong> - 重点理解算法的设计哲学，而非具体实现</li>
+<li><strong>关注应用场景</strong> - 了解算法在实际工程中的应用</li>
+<li><strong>对比学习</strong> - 比较不同算法的优缺点和适用场景</li>
+<li><strong>实践验证</strong> - 通过实际项目体验算法的效果</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-核心价值">💎 核心价值<a href="#-核心价值" class="hash-link" aria-label="Direct link to 💎 核心价值" title="Direct link to 💎 核心价值" translate="no">​</a></h3>
+<p>这些算法代表了工程师们在面对复杂问题时的智慧结晶，每一个都值得深入研究和品味。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/panda-blog/算法/工业算法总结.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docusaurus-blog/docs/panda-blog/算法/工业算法/预测轨迹/卡尔曼滤波"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">卡尔曼滤波：最优状态估计的艺术</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-算法设计美学的共同特征" class="table-of-contents__link toc-highlight">🎯 算法设计美学的共同特征</a><ul><li><a href="#-为什么这些算法有设计感" class="table-of-contents__link toc-highlight">✅ 为什么这些算法&quot;有设计感&quot;？</a></li></ul></li><li><a href="#-控制与决策类算法" class="table-of-contents__link toc-highlight">🔧 控制与决策类算法</a><ul><li><a href="#️-pid-控制器" class="table-of-contents__link toc-highlight">🎛️ PID 控制器</a></li><li><a href="#-卡尔曼滤波器" class="table-of-contents__link toc-highlight">🎯 卡尔曼滤波器</a></li><li><a href="#-a-搜索算法" class="table-of-contents__link toc-highlight">🔍 A* 搜索算法</a></li><li><a href="#️-状态机fsm" class="table-of-contents__link toc-highlight">⚙️ 状态机（FSM）</a></li><li><a href="#️-模糊控制" class="table-of-contents__link toc-highlight">🌫️ 模糊控制</a></li></ul></li><li><a href="#-智能与自适应类算法" class="table-of-contents__link toc-highlight">🧠 智能与自适应类算法</a><ul><li><a href="#-遗传算法" class="table-of-contents__link toc-highlight">🧬 遗传算法</a></li><li><a href="#-蚁群算法" class="table-of-contents__link toc-highlight">🐜 蚁群算法</a></li><li><a href="#-粒子群优化pso" class="table-of-contents__link toc-highlight">🐦 粒子群优化（PSO）</a></li><li><a href="#-q-learning强化学习" class="table-of-contents__link toc-highlight">🎮 Q-learning（强化学习）</a></li></ul></li><li><a href="#-几何--图形--图论类算法" class="table-of-contents__link toc-highlight">🌊 几何 / 图形 / 图论类算法</a><ul><li><a href="#-洪水填充算法" class="table-of-contents__link toc-highlight">🌊 洪水填充算法</a></li><li><a href="#-marching-squares--cubes" class="table-of-contents__link toc-highlight">📐 Marching Squares / Cubes</a></li><li><a href="#️-voronoi-图" class="table-of-contents__link toc-highlight">🕸️ Voronoi 图</a></li><li><a href="#-rrt-快速随机树" class="table-of-contents__link toc-highlight">🌳 RRT (快速随机树)</a></li></ul></li><li><a href="#-工业机器人领域特色算法" class="table-of-contents__link toc-highlight">💡 工业/机器人领域特色算法</a><ul><li><a href="#️-slam同步定位与建图" class="table-of-contents__link toc-highlight">🗺️ SLAM（同步定位与建图）</a></li><li><a href="#-dwa动态窗口法" class="table-of-contents__link toc-highlight">🚗 DWA（动态窗口法）</a></li><li><a href="#️-视觉伺服visual-servoing" class="table-of-contents__link toc-highlight">👁️ 视觉伺服（Visual Servoing）</a></li><li><a href="#-人工势场法" class="table-of-contents__link toc-highlight">⚡ 人工势场法</a></li></ul></li><li><a href="#-算法设计哲学总结" class="table-of-contents__link toc-highlight">🎨 算法设计哲学总结</a><ul><li><a href="#1️⃣-优雅的数学原理" class="table-of-contents__link toc-highlight">1️⃣ 优雅的数学原理</a></li><li><a href="#2️⃣-仿生学思维" class="table-of-contents__link toc-highlight">2️⃣ 仿生学思维</a></li><li><a href="#3️⃣-实用性与理论性并重" class="table-of-contents__link toc-highlight">3️⃣ 实用性与理论性并重</a></li><li><a href="#4️⃣-渐进式优化" class="table-of-contents__link toc-highlight">4️⃣ 渐进式优化</a></li><li><a href="#5️⃣-可解释性" class="table-of-contents__link toc-highlight">5️⃣ 可解释性</a></li></ul></li><li><a href="#-学习建议" class="table-of-contents__link toc-highlight">🚀 学习建议</a><ul><li><a href="#-学习方法" class="table-of-contents__link toc-highlight">📖 学习方法</a></li><li><a href="#-核心价值" class="table-of-contents__link toc-highlight">💎 核心价值</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docusaurus-blog/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docusaurus-blog/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
