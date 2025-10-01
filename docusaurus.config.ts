@@ -113,6 +113,13 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+          type: 'docSidebar',          
+          sidebarId: 'blogPandaSidebar', 
+          position: 'left',
+          label: 'Panda Blog',         // 顶部显示名称
+        },
+    
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
       ],
