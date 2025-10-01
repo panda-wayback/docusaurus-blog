@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://panda-wayback.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docusaurus-blog/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'panda-wayback', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-blog', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -68,6 +68,32 @@ const config: Config = {
     ],
   ],
 
+  // 添加多实例博客插件配置
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        // 博客插件的唯一 ID
+        id: 'blog-panda',
+        // 博客文件夹的路径
+        path: 'blog-panda',
+        // 博客的 URL 路由路径
+        routeBasePath: 'blog-panda',
+        // 显示阅读时间
+        showReadingTime: true,
+        // RSS 订阅配置
+        feedOptions: {
+          type: ['rss', 'atom'],
+          xslt: true,
+        },
+        // 博客最佳实践警告
+        onInlineTags: 'warn',
+        onInlineAuthors: 'warn',
+        onUntruncatedBlogPosts: 'warn',
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -88,11 +114,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
       ],
     },
     footer: {
