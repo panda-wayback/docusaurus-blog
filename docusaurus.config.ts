@@ -119,6 +119,12 @@ const config: Config = {
           position: 'left',
           label: 'Panda Blog',         // 顶部显示名称
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'algorithmSidebar',
+          position: 'left',
+          label: '算法',
+        },
     
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
