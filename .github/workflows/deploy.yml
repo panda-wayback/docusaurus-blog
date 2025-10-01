@@ -42,7 +42,9 @@ jobs:
       # 5. 部署到 GitHub Pages
       - name: Deploy
         env:
+          GIT_USER: git
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_SSH: false
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           npm run deploy
