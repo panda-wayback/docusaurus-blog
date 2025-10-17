@@ -14,14 +14,21 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          🐼 Panda 的技术博客
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          分享算法、ROS2、服务器技术、量化交易等领域的知识与经验
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            开始阅读 📚
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            to="/blog-panda">
+            查看博客 📝
           </Link>
         </div>
       </div>
@@ -33,8 +40,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Panda 的技术博客"
+      description="分享算法、ROS2、服务器技术、量化交易等领域的知识与经验">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
