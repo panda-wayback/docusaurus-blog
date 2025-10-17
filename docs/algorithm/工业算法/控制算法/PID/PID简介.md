@@ -16,9 +16,9 @@ PID 控制器由三个基本环节组成：
 
 PID 控制器的基本公式为：
 
-$$
-u(t) = K_p e(t) + K_i \int_0^t e(\tau)d\tau + K_d \frac{de(t)}{dt}
-$$
+```
+u(t) = Kp * e(t) + Ki * ∫e(τ)dτ + Kd * de(t)/dt
+```
 
 其中：
 - $u(t)$ 是控制输出

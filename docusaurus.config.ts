@@ -92,6 +92,16 @@ const config: Config = {
         onUntruncatedBlogPosts: 'warn',
       },
     ],
+    // 添加本地搜索插件
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
   ],
 
   themeConfig: {
@@ -128,6 +138,10 @@ const config: Config = {
     
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
+        {
+          type: 'search',
+          position: 'right',
+        },
       ],
     },
     footer: {
