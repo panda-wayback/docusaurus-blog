@@ -28,15 +28,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-  {
-    title: '量化交易',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        量化模型、交易策略和金融科技探索
-      </>
-    ),
-  },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {

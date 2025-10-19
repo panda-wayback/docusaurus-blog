@@ -17,7 +17,7 @@ function HomepageHeader() {
           🐼 Panda 的技术博客
         </Heading>
         <p className="hero__subtitle">
-          分享算法、ROS2、服务器技术、量化交易等领域的知识与经验
+          分享算法、编程、ROS2、服务器技术、
         </p>
         <div className={styles.buttons}>
           <Link
