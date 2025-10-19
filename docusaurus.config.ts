@@ -117,12 +117,12 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Tutorial',
+        // },
         {
           type: 'docSidebar',          
           sidebarId: 'blogPandaSidebar', 
@@ -136,8 +136,8 @@ const config: Config = {
           label: '算法',
         },
     
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
         {
           type: 'search',
           position: 'right',
