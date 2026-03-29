@@ -1,6 +1,10 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {
+  buildNavbarDocSidebarItems,
+  navbarIntroItem,
+} from './docs-nav-autogen';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -47,21 +51,8 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // 未使用 `blog/` 目录时关闭，否则会引用不存在的文章并报 Module not found
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -69,30 +60,8 @@ const config: Config = {
     ],
   ],
 
-  // 添加多实例博客插件配置
   plugins: [
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        // 博客插件的唯一 ID
-        id: 'blog-panda',
-        // 博客文件夹的路径
-        path: 'blog-panda',
-        // 博客的 URL 路由路径
-        routeBasePath: 'blog-panda',
-        // 显示阅读时间
-        showReadingTime: true,
-        // RSS 订阅配置
-        feedOptions: {
-          type: ['rss', 'atom'],
-          xslt: true,
-        },
-        // 博客最佳实践警告
-        onInlineTags: 'warn',
-        onInlineAuthors: 'warn',
-        onUntruncatedBlogPosts: 'warn',
-      },
-    ],
+    // 若恢复第二博客：新建 `blog-panda/` 并重新加入 `@docusaurus/plugin-content-blog` 配置
     // 添加本地搜索插件
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -101,6 +70,7 @@ const config: Config = {
         language: ["en", "zh"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        indexBlog: false,
       },
     ],
   ],
@@ -118,27 +88,8 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        {
-          type: 'docSidebar',          
-          sidebarId: 'blogPandaSidebar', 
-          position: 'left',
-          label: 'Panda Blog',         // 顶部显示名称
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'algorithmSidebar',
-          position: 'left',
-          label: '算法',
-        },
-    
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        // {to: '/blog-panda', label: 'Blog Panda', position: 'left'},
+        ...(navbarIntroItem() ? [navbarIntroItem()!] : []),
+        ...buildNavbarDocSidebarItems(),
         {
           type: 'search',
           position: 'right',
@@ -178,8 +129,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: '文档博客',
+              to: '/docs/panda-blog',
             },
             {
               label: 'GitHub',
