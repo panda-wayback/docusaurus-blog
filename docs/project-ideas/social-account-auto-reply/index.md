@@ -12,8 +12,8 @@ sidebar_position: 0
 |------|------|
 | [架构与数据流](./architecture/index.md) | 前后端职责、**WebSocket 长连接**、全双工与 agent 编排（传输层已定） |
 | [通信与协议](./protocol/index.md) | **传输已定 WebSocket（WSS）**；消息类型与字段仍待补全 |
-| [后端（Pydantic AI）](./backend/index.md) | 智能体、记忆体、tool 在服务端如何定义 |
-| [前端与扩展](./client-extension/index.md) | 插件侧「类 API」能力、工具函数、页面执行 |
+| [后端（Pydantic AI）](./backend/index.md) | 总览；子页分 **框架 / 记忆体 / 流水与画像 / Tool 契约** |
+| [前端与扩展](./client-extension/index.md) | 总览；子页分 **新消息上行 / 发送消息与 UI 宏 / 工程备忘** |
 | [产品与变现](./product/index.md) | 用户画像、收费方式等 |
 | [待决与备忘](./open-questions/index.md) | 还没想好的点、决策清单 |
 
