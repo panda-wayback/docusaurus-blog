@@ -82,7 +82,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '🐼 Panda Blog',
+      title: 'Panda Blog',
       logo: {
         alt: 'Panda 技术博客 Logo',
         src: 'img/logo.svg',
