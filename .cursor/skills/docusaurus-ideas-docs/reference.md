@@ -44,6 +44,6 @@ ideas/
 ## 新增一块「子想法」时的步骤
 
 1. 在合适的**父文件夹**下新建子目录（名称体现想法）。  
-2. 子目录内 `_category_.json` + `index.md`（正文）。  
+2. 子目录内 `_category_.yml` + `index.md`（正文）。  
 3. 更新**父级** `index.md` 的导航表（含 `ideas/index.md` 若为大区入口）。  
 4. `yarn build`。

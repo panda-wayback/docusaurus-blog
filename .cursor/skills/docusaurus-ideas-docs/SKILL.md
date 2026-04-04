@@ -4,7 +4,7 @@ description: >-
   Enforces hierarchical doc structure for this repo: split ideas across folders,
   keep each folder index.md as a rollup, put deep or scoped writing in child
   folders—not one giant file. Covers docs/ideas (日常随想与立项项目同一分区),
-  _category_.json, and safe Docusaurus links. Use when adding or editing idea
+  _category_.yml / _category_.json, and safe Docusaurus links. Use when adding or editing idea
   docs, 文档分类、想法拆分、避免单文件堆叠, or broken links.
 ---
 
@@ -28,7 +28,7 @@ description: >-
 
 ## 顶层分区（docs/）
 
-- 顶栏与侧栏由 `docs-nav-autogen.ts` 按 `docs/` **一级目录**生成；**无** `_category_.json` 的一级目录仍会出现在顶栏（显示名由文件夹名推导）。建议为需要中文名或侧栏元数据的分区补 `_category_.json`（至少 `label`）。  
+- 顶栏与侧栏由 `docs-nav-autogen.ts` 按 `docs/` **一级目录**生成；**无** `_category_.yml` / `.json` 的一级目录仍会出现在顶栏（显示名由文件夹名推导）。本站 **`docs/` 下分类文件已统一为 `_category_.yml`**（样例见 `config-examples/_category_.yml`）；Docusaurus 仍支持 `.json`。  
 - **想法与项目**：`docs/ideas/`（日常随想、需求备忘与立项级项目文档**同一分区**，用子文件夹区分深浅）。  
 - **博客配置**：`docs/blog-config/`（本站 Docusaurus 侧栏元数据、`preset` 与博客开关等——**不要**与 `ideas/` 内容混写）。  
 - **教程**：`docs/tutorial/`（模板自带的 Docusaurus Tutorial，与自有内容分区）。
@@ -39,19 +39,29 @@ description: >-
 
 - **`ideas/index.md`**：分区总览（轻量与项目列表、**导航表**）。建议 `sidebar_position: 0`。  
 - **并列子文件夹**可以是：短文（如「记忆体与可书写记忆」）、或完整项目（如「多平台账号自动回复」）。  
-- **项目根** `index.md`：**该项目的汇总**（目标一句话、大块导航表）。**项目根** `_category_.json`：侧栏上该项目的显示名。
+- **项目根** `index.md`：**该项目的汇总**（目标一句话、大块导航表）。**项目根** `_category_.yml` / `.json`：侧栏上该项目的显示名。
 
 ### 项目内部怎么拆（语义驱动，不背表）
 
 - **下一层文件夹** = 项目下的**一大类想法**（例如架构、协议、商业化——名字随你）。  
 - **再下一层** = 子话题、功能线或深写；继续拆到「一文件一事」。  
-- **同一父级下**多个子文件夹并列时，用各自 `_category_.json` 的 `label` + `position` 控制侧栏顺序。
+- **同一父级下**多个子文件夹并列时，用各自 `_category_.yml` / `.json` 的 `label` + `position` 控制侧栏顺序。
 
 ### 大区再分子文件夹（习惯）
 
 若某一层下面还会长期增内容，该层 **`index.md` 只做汇总 + 子区导航表**，**不要**把细节都堆在一页——**每个子话题一个子文件夹**。
 
-## `_category_.json`
+## `_category_.yml` / `_category_.json`
+
+推荐 YAML（可写 `#` 注释；完整样例见仓库 `config-examples/_category_.yml`）：
+
+```yaml
+label: 侧栏显示名
+collapsed: false
+position: 1
+```
+
+等价 JSON：
 
 ```json
 {
@@ -78,7 +88,7 @@ description: >-
 
 - [ ] 是否避免「一个文件装下整坨想法」→ 该拆的已拆成**文件夹**  
 - [ ] 当前层 `index.md` 是否主要是**汇总 + 导航**，细节是否在下级  
-- [ ] 新文件夹是否有 `_category_.json`（`label`，同级多时用 `position`）  
+- [ ] 新文件夹是否有 `_category_.yml` 或 `.json`（`label`，同级多时用 `position`）  
 - [ ] 父级汇总页是否已更新**导航表**  
 - [ ] 跨目录链接是否指向明确 `.md` 路径；`yarn build` 通过  
 

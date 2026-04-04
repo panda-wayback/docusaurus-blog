@@ -13,4 +13,4 @@
 
 ## 顶栏与侧栏生成
 
-- 各顶层 `docs/<分区>/_category_.json` 的 `label` 与 **`docs-nav-autogen.ts`** 如何生成顶栏文档标签，见 [`_category_.json` 字段说明](./docusaurus-category-json.md) 中「和你站点的关系」一节。
+- 各顶层 `docs/<分区>/_category_.yml` 的 `label` 与 **`docs-nav-autogen.ts`** 如何生成顶栏文档标签，见 [分类元数据说明](./docusaurus-category-json.md) 中「和你站点的关系」一节。
