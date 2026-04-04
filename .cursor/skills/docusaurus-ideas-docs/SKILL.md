@@ -28,7 +28,7 @@ description: >-
 
 ## 顶层分区（docs/）
 
-- 顶栏与侧栏由 `docs-nav-autogen.ts` 按 `docs/` **一级目录**生成；一级目录需有 `_category_.json`（至少 `label`）。  
+- 顶栏与侧栏由 `docs-nav-autogen.ts` 按 `docs/` **一级目录**生成；**无** `_category_.json` 的一级目录仍会出现在顶栏（显示名由文件夹名推导）。建议为需要中文名或侧栏元数据的分区补 `_category_.json`（至少 `label`）。  
 - **想法与项目**：`docs/ideas/`（日常随想、需求备忘与立项级项目文档**同一分区**，用子文件夹区分深浅）。  
 - **博客配置**：`docs/blog-config/`（本站 Docusaurus 侧栏元数据、`preset` 与博客开关等——**不要**与 `ideas/` 内容混写）。  
 - **教程**：`docs/tutorial/`（模板自带的 Docusaurus Tutorial，与自有内容分区）。
