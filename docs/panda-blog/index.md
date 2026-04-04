@@ -12,7 +12,9 @@
 - 服务器工具使用指南
 
 ### VPN 技术
-- VPN 搭建教程
+- [VPS 购买](./vpn/vps%20购买.md)
+- [出口 IP、大量下载与风控](./vpn/出口-IP-与下载风控.md)
+- [Trojan 搭建](./vpn/trojan%20搭建.md) · [OpenVPN 搭建](./vpn/OpenVPN%20搭建.md)
 
 ### 手机技术
 - 手机操控技术
