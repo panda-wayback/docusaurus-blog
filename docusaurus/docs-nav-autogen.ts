@@ -3,7 +3,8 @@ import path from 'path';
 import yaml from 'js-yaml';
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-const docsRoot = () => path.join(process.cwd(), 'docs');
+/** 与 `docusaurus.config.ts` 中 `docs.path` 一致：仓库根目录下的 `docs/` */
+const docsRoot = () => path.join(__dirname, '..', 'docs');
 
 /**
  * docs 一级目录 → 各对应一个顶栏「文档分区」标签 + 独立侧栏（见 buildSidebarsFromDocFolders / buildNavbarDocSidebarItems）。

@@ -4,7 +4,7 @@
 
 **推荐手写时用 `_category_.yml`**：YAML 支持 `#` 注释，比 JSON 更易维护；字段与 JSON 完全等价。仓库根目录 **`config-examples/_category_.yml`** 为带中文注释的完整样例，可复制到任意 `docs/.../` 目录下使用（文件名需为 `_category_.yml`）。
 
-**与本站顶栏的关系**：`docs-nav-autogen.ts` 读取**一级目录**下的 `label` 作为顶栏分区名称时，**优先读 `_category_.yml`**，没有 `label` 再读 `_category_.json`；若两者同时存在且 `.yml` 里已有 `label`，以 `.yml` 为准。
+**与本站顶栏的关系**：`docusaurus/docs-nav-autogen.ts` 读取**一级目录**下的 `label` 作为顶栏分区名称时，**优先读 `_category_.yml`**，没有 `label` 再读 `_category_.json`；若两者同时存在且 `.yml` 里已有 `label`，以 `.yml` 为准。
 
 ---
 
@@ -12,7 +12,7 @@
 
 - **含义**：侧栏里这一层分类**显示的名称**。
 - **默认**：若不写，一般会由文件夹名推导（例如 `my-topic` → `My Topic`）；若该分类通过 `link` 绑定了某篇文档，也可能从文档 front matter 继承标题（见官方文档 *Category metadata*）。
-- **和你站点的关系**：你在 `docs-nav-autogen.ts` 里用顶层文件夹的 `_category_.yml` / `_category_.json` 的 `label` 作为**顶栏**对应标签的文字（优先 YAML），因此顶层目录的 `label` 会同时影响侧栏与顶栏。
+- **和你站点的关系**：你在 `docusaurus/docs-nav-autogen.ts` 里用顶层文件夹的 `_category_.yml` / `_category_.json` 的 `label` 作为**顶栏**对应标签的文字（优先 YAML），因此顶层目录的 `label` 会同时影响侧栏与顶栏。
 
 ---
 

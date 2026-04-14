@@ -45,6 +45,8 @@ const config: Config = {
       'classic',
       {
         docs: {
+          // 文档 Markdown 在仓库根目录 `docs/`，与站点代码 `docusaurus/` 分离
+          path: '../docs',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -71,6 +73,8 @@ const config: Config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         indexBlog: false,
+        // 与 preset `docs.path` 一致；默认 `docs` 会指向不存在的 docusaurus/docs
+        docsDir: '../docs',
       },
     ],
   ],
