@@ -45,11 +45,8 @@ git push origin main
 
 1. 检出代码
 2. 设置 Node.js 20 环境
-3. 安装 pnpm
-4. 缓存依赖（加速构建）
-5. 安装项目依赖
-6. 配置 Git 用户信息
-7. 运行 `pnpm run deploy` 部署到 GitHub Pages
+3. 缓存 npm 依赖（`docusaurus/package-lock.json`）
+4. 在 `docusaurus/` 下安装依赖并运行 `npm run deploy` 部署到 GitHub Pages
 
 ## 🔍 故障排查
 

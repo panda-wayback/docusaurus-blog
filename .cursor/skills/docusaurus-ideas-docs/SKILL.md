@@ -20,7 +20,7 @@ description: >-
 
 ## 何时应用
 
-在以下情况按本 skill 操作，改链后执行 `yarn build` 确认无 broken links：
+在以下情况按本 skill 操作，改链后在 `docusaurus/` 下执行 `npm run build` 确认无 broken links：
 
 - 在 `docs/ideas/` 下新增或调整文档  
 - 发现某个 `index.md` 过长、主题混杂 → **拆文件夹**并把本层改成汇总  
@@ -28,7 +28,7 @@ description: >-
 
 ## 顶层分区（docs/）
 
-- 顶栏与侧栏由 `docs-nav-autogen.ts` 按 `docs/` **一级目录**生成；**无** `_category_.yml` / `.json` 的一级目录仍会出现在顶栏（显示名由文件夹名推导）。本站 **`docs/` 下分类文件已统一为 `_category_.yml`**（样例见 `config-examples/_category_.yml`）；Docusaurus 仍支持 `.json`。  
+- 顶栏与侧栏由 `docusaurus/docs-nav-autogen.ts` 按仓库根 **`docs/`** **一级目录**生成；**无** `_category_.yml` / `.json` 的一级目录仍会出现在顶栏（显示名由文件夹名推导）。本站 **`docs/` 下分类文件已统一为 `_category_.yml`**（样例见 `config-examples/_category_.yml`）；Docusaurus 仍支持 `.json`。  
 - **想法与项目**：`docs/ideas/`（日常随想、需求备忘与立项级项目文档**同一分区**，用子文件夹区分深浅）。  
 - **博客配置**：`docs/blog-config/`（本站 Docusaurus 侧栏元数据、`preset` 与博客开关等——**不要**与 `ideas/` 内容混写）。  
 - **教程**：`docs/tutorial/`（模板自带的 Docusaurus Tutorial，与自有内容分区）。
@@ -82,7 +82,7 @@ position: 1
 
 从 `docs/ideas/index.md` 进某子区：`./<slug>/index.md` 或站内绝对路径 `/docs/ideas/<slug>/...`。
 
-**同目录下的 `index.md` 链到并列 `.md` 时**：若页面 URL 为 `/docs/某目录`（无尾斜杠），`./foo.md` 在浏览器里可能被当成 `/docs/foo` 而 404。并列文档宜用 **`/docs/某目录/foo`**（站内绝对路径），或把并列页改成 `foo/index.md` 并用 `./foo/index.md` 链接。改完 **必须** `yarn build`。
+**同目录下的 `index.md` 链到并列 `.md` 时**：若页面 URL 为 `/docs/某目录`（无尾斜杠），`./foo.md` 在浏览器里可能被当成 `/docs/foo` 而 404。并列文档宜用 **`/docs/某目录/foo`**（站内绝对路径），或把并列页改成 `foo/index.md` 并用 `./foo/index.md` 链接。改完 **必须** 在 `docusaurus/` 下执行 `npm run build`。
 
 ## 检查清单
 
@@ -90,7 +90,7 @@ position: 1
 - [ ] 当前层 `index.md` 是否主要是**汇总 + 导航**，细节是否在下级  
 - [ ] 新文件夹是否有 `_category_.yml` 或 `.json`（`label`，同级多时用 `position`）  
 - [ ] 父级汇总页是否已更新**导航表**  
-- [ ] 跨目录链接是否指向明确 `.md` 路径；`yarn build` 通过  
+- [ ] 跨目录链接是否指向明确 `.md` 路径；`docusaurus/` 下 `npm run build` 通过  
 
 ## 延伸阅读
 

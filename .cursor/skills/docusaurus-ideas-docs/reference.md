@@ -46,4 +46,4 @@ ideas/
 1. 在合适的**父文件夹**下新建子目录（名称体现想法）。  
 2. 子目录内 `_category_.yml` + `index.md`（正文）。  
 3. 更新**父级** `index.md` 的导航表（含 `ideas/index.md` 若为大区入口）。  
-4. `yarn build`。
+4. 在 `docusaurus/` 下执行 `npm run build`。
